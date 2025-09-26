@@ -82,7 +82,7 @@
           </div>
           <div class="mt-4 space-y-3 text-sm">
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-200"><strong>Buyer:</strong> Is 123 Main St still available? Could I see it Saturday?</div>
-            <div class="p-3 rounded-xl bg-brand-50 border border-brand-100 text-slate-800"><strong>Copilot:</strong> Hi Alex! 123 Main St is available at $589,000 · 3 bed · 2 bath. <em>Open house Sun 2–4pm.</em> Want to book a private showing? <a class="text-brand-700 underline" href="#">See our availability</a>.</div>
+            <div class="p-3 rounded-xl bg-brand-50 border border-brand-100 text-slate-800"><strong>Copilot:</strong> Hi Alex! 123 Main St is available at $589,000 · 3 bed · 2 bath. <em>Open house Sun 2–4pm.</em> Want to book a private showing? <a class="text-brand-700 underline" href="mailto:zakisandhu@hotmail.com?subject=Showing%20availability%20request">See our availability</a>.</div>
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-200"><strong>Buyer:</strong> Saturday 11am works.</div>
             <div class="p-3 rounded-xl bg-brand-50 border border-brand-100"><strong>Copilot:</strong> Booked for Sat 11:00. I’ll text you details and parking. Reply STOP to opt out.</div>
           </div>
@@ -188,7 +188,7 @@
           </ul>
         </div>
       </div>
-      <form name="Pilot" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks" class="space-y-4 rounded-2xl border border-slate-200 p-6 bg-white shadow-soft">
+      <form name="Pilot" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="space-y-4 rounded-2xl border border-slate-200 p-6 bg-white shadow-soft">
         <!-- Netlify Forms capture: ensure this name matches the hidden input below -->
         <input type="hidden" name="form-name" value="Pilot" />
         <!-- Honeypot field to reduce spam -->
@@ -241,7 +241,7 @@
           <label for="consent" class="text-sm text-slate-600">I agree to receive pilot-related messages. Reply STOP to opt out.</label>
         </div>
         <button class="w-full md:w-auto inline-flex justify-center items-center rounded-xl bg-brand-600 text-white px-6 py-3 font-semibold shadow-soft hover:bg-brand-700">Request my pilot</button>
-        <p class="text-sm text-slate-500">We’ll contact you within 24 hours.</p>
+        <p class="text-sm text-slate-500">We’ll contact you within 24 hours. Prefer email? <a href="mailto:zakisandhu@hotmail.com" class="text-brand-600 hover:text-brand-700">zakisandhu@hotmail.com</a></p>
       </form>
     </div>
   </section>
@@ -277,7 +277,7 @@
         <a href="#apply" class="hover:text-slate-800">Join pilot</a>
         <a href="/privacy" class="hover:text-slate-800">Privacy</a>
         <a href="/terms" class="hover:text-slate-800">Terms</a>
-        <a href="mailto:founder@recopilot.app" class="hover:text-slate-800">founder@recopilot.app</a>
+        <a href="mailto:zakisandhu@hotmail.com" class="hover:text-slate-800">zakisandhu@hotmail.com</a>
       </div>
     </div>
   </footer>
@@ -285,44 +285,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
-  <script>
-    // Replace with your form endpoint to collect submissions (e.g., Formspree/Airtable)
-    const FORM_ENDPOINT = ""; // e.g., "https://formspree.io/f/xxxxxx"
-
-    const f = document.getElementById('pilotForm');
-    const note = document.getElementById('formNote');
-    f.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const data = Object.fromEntries(new FormData(f).entries());
-      // Simple front-end validation
-      if(!data.name || !data.email || !data.phone || !data.city){
-        note.textContent = 'Please complete all required fields.';
-        note.className = 'text-sm text-red-600';
-        return;
-      }
-      note.textContent = 'Submitting…';
-      note.className = 'text-sm text-slate-500';
-
-      try {
-        if (FORM_ENDPOINT) {
-          const res = await fetch(FORM_ENDPOINT, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-          });
-          if (!res.ok) throw new Error('Network error');
-        }
-        f.reset();
-        note.textContent = 'Thanks! We\'ll reach out within 24 hours to set up your pilot.';
-        note.className = 'text-sm text-green-600';
-      } catch (err) {
-        note.textContent = 'Could not submit. Please email us at founder@recopilot.app';
-        note.className = 'text-sm text-red-600';
-      }
-    });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  
 </body>
 </html>
