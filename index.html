@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RE Copilot – Never lose a buyer to slow follow‑ups</title>
+  <meta name="description" content="SMS/WhatsApp copilot for real estate agents that replies in minutes, qualifies buyers, and books showings. Free 14‑day pilot.">
+  <meta property="og:title" content="RE Copilot – Never lose a buyer to slow follow‑ups" />
+  <meta property="og:description" content="Replies in minutes, qualifies buyers, and books showings. Free 14‑day pilot." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  
+  <!-- TailwindCSS via CDN for quick iteration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa',
+              500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,0.75); }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(2, 6, 23, 0.10); }
+  </style>
+</head>
+<body class="antialiased text-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 glass border-b border-slate-200">
+    <div class="max-w-7xl mx-auto flex items-center justify-between py-3 px-4">
+      <a href="#top" class="flex items-center gap-2 font-semibold text-slate-900">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-brand-600 text-white">RE</span>
+        <span>RE Copilot</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#how" class="hover:text-brand-700">How it works</a>
+        <a href="#features" class="hover:text-brand-700">Features</a>
+        <a href="#pricing" class="hover:text-brand-700">Pricing</a>
+        <a href="#faq" class="hover:text-brand-700">FAQ</a>
+      </nav>
+      <a href="#apply" class="hidden md:inline-flex items-center gap-2 rounded-xl bg-brand-600 text-white px-4 py-2 text-sm font-semibold shadow-soft hover:bg-brand-700">Join 14‑day pilot</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-brand-50 via-white to-white"></div>
+    <div class="max-w-7xl mx-auto px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900">
+          Never lose a buyer to <span class="text-brand-600">slow follow‑ups</span>
+        </h1>
+        <p class="mt-5 text-lg text-slate-600">
+          RE Copilot is an SMS/WhatsApp assistant that replies in minutes, qualifies buyers, and books showings with your availability. Built for Canadian agents. EN/FR.
+        </p>
+        <ul class="mt-6 space-y-3 text-slate-700">
+          <li class="flex items-start gap-3"><svg class="h-5 w-5 text-brand-600 mt-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-7.25 7.25a1 1 0 01-1.414 0l-3.5-3.5a1 1 0 111.414-1.414l2.793 2.793 6.543-6.543a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Under <strong>5‑minute</strong> first replies</li>
+          <li class="flex items-start gap-3"><svg class="h-5 w-5 text-brand-600 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M2 10a8 8 0 1116 0 8 8 0 01-16 0zm9-4a1 1 0 10-2 0v4a1 1 0 00.293.707l2.5 2.5a1 1 0 001.414-1.414L11 9.586V6z"/></svg><strong>More showings</strong> booked automatically</li>
+          <li class="flex items-start gap-3"><svg class="h-5 w-5 text-brand-600 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3 3a1 1 0 011-1h2a1 1 0 011 1v1h6V3a1 1 0 011-1h2a1 1 0 011 1v14a1 1 0 01-1 1h-2a1 1 0 01-1-1v-1H7v1a1 1 0 01-1 1H4a1 1 0 01-1-1V3zm4 11h6V6H7v8z"/></svg>No CRM required — works over SMS/WhatsApp + email</li>
+        </ul>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#apply" class="inline-flex justify-center items-center rounded-xl bg-brand-600 text-white px-6 py-3 font-semibold shadow-soft hover:bg-brand-700">Join the 14‑day pilot</a>
+          <a href="#how" class="inline-flex justify-center items-center rounded-xl border border-slate-300 px-6 py-3 font-semibold text-slate-700 hover:bg-slate-50">See how it works</a>
+        </div>
+        <p class="mt-4 text-sm text-slate-500">Built in Montréal · English / Français</p>
+      </div>
+      <div class="relative">
+        <div class="rounded-2xl border border-slate-200 shadow-soft p-6 bg-white">
+          <div class="flex items-center gap-3">
+            <div class="h-10 w-10 rounded-xl bg-brand-600/10 text-brand-700 flex items-center justify-center font-bold">RE</div>
+            <div>
+              <p class="text-sm text-slate-500">Live preview</p>
+              <p class="font-semibold">Buyer messages about 123 Main St</p>
+            </div>
+          </div>
+          <div class="mt-4 space-y-3 text-sm">
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200"><strong>Buyer:</strong> Is 123 Main St still available? Could I see it Saturday?</div>
+            <div class="p-3 rounded-xl bg-brand-50 border border-brand-100 text-slate-800"><strong>Copilot:</strong> Hi Alex! 123 Main St is available at $589,000 · 3 bed · 2 bath. <em>Open house Sun 2–4pm.</em> Want to book a private showing? <a class="text-brand-700 underline" href="#">See our availability</a>.</div>
+            <div class="p-3 rounded-xl bg-slate-50 border border-slate-200"><strong>Buyer:</strong> Saturday 11am works.</div>
+            <div class="p-3 rounded-xl bg-brand-50 border border-brand-100"><strong>Copilot:</strong> Booked for Sat 11:00. I’ll text you details and parking. Reply STOP to opt out.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof / metrics strip -->
+  <section class="bg-slate-50 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-8 grid sm:grid-cols-3 gap-6 text-center">
+      <div><p class="text-3xl font-extrabold text-slate-900">&lt;5 min</p><p class="text-slate-600">median first reply</p></div>
+      <div><p class="text-3xl font-extrabold text-slate-900">+2 / week</p><p class="text-slate-600">extra showings (pilot goal)</p></div>
+      <div><p class="text-3xl font-extrabold text-slate-900">24 hrs</p><p class="text-slate-600">to go live</p></div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="max-w-7xl mx-auto px-4 py-20">
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">How it works</h2>
+    <div class="mt-10 grid md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-soft">
+        <div class="h-10 w-10 rounded-xl bg-brand-600/10 text-brand-700 flex items-center justify-center font-bold">1</div>
+        <h3 class="mt-4 font-semibold">Connect your channels</h3>
+        <p class="mt-2 text-slate-600">We set up SMS/WhatsApp + your calendar link. No CRM needed. EN/FR supported.</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-soft">
+        <div class="h-10 w-10 rounded-xl bg-brand-600/10 text-brand-700 flex items-center justify-center font-bold">2</div>
+        <h3 class="mt-4 font-semibold">Paste a listing URL</h3>
+        <p class="mt-2 text-slate-600">Copilot pulls key facts (beds, baths, price, open house) to answer common questions.</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-soft">
+        <div class="h-10 w-10 rounded-xl bg-brand-600/10 text-brand-700 flex items-center justify-center font-bold">3</div>
+        <h3 class="mt-4 font-semibold">Go live in 24 hours</h3>
+        <p class="mt-2 text-slate-600">Buyers get fast answers and a link to book showings. You get a daily hot‑lead digest.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="max-w-7xl mx-auto px-4 pb-6">
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Purpose‑built for agents</h2>
+        <ul class="mt-6 space-y-4 text-slate-700">
+          <li class="flex gap-3"><span class="text-brand-600">◆</span><span><strong>Instant triage</strong> of new inquiries into "book showing", "price/offer", or "more info" flows.</span></li>
+          <li class="flex gap-3"><span class="text-brand-600">◆</span><span><strong>Daily digest</strong> of hot leads with one‑tap call back.</span></li>
+          <li class="flex gap-3"><span class="text-brand-600">◆</span><span><strong>EN/FR</strong> bilingual replies; Canadian‑first playbooks.</span></li>
+          <li class="flex gap-3"><span class="text-brand-600">◆</span><span><strong>Compliance‑friendly</strong>: opt‑out on SMS, minimal PII, no MLS data stored.</span></li>
+          <li class="flex gap-3"><span class="text-brand-600">◆</span><span><strong>Service setup</strong>: we configure your first listing and templates for you.</span></li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+        <h3 class="font-semibold">What you’ll see each week</h3>
+        <div class="mt-4 grid grid-cols-3 gap-4 text-center">
+          <div class="p-4 rounded-xl bg-slate-50 border"><p class="text-2xl font-bold">12</p><p class="text-xs text-slate-500">New inquiries</p></div>
+          <div class="p-4 rounded-xl bg-slate-50 border"><p class="text-2xl font-bold">3</p><p class="text-xs text-slate-500">Showings booked</p></div>
+          <div class="p-4 rounded-xl bg-slate-50 border"><p class="text-2xl font-bold">4m</p><p class="text-xs text-slate-500">Median first reply</p></div>
+        </div>
+        <p class="mt-4 text-sm text-slate-500">Illustrative metrics for pilot goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="max-w-7xl mx-auto px-4 py-20">
+    <div class="rounded-3xl border border-slate-200 bg-white p-8 md:p-10 shadow-soft">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Pilot free for 14 days</h2>
+          <p class="mt-3 text-slate-600">Get set up on one listing and one channel. If you see value, continue at the standard plan below. Cancel anytime.</p>
+          <ul class="mt-6 space-y-2 text-slate-700 text-sm">
+            <li>• Standard: <strong>$99/mo</strong> (month‑to‑month)</li>
+            <li>• Optional setup: <strong>$199</strong> (we configure templates & routing)</li>
+            <li>• No CRM required • EN/FR • Canada first</li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <div class="inline-flex items-baseline gap-2">
+            <span class="text-5xl font-extrabold text-slate-900">$0</span>
+            <span class="text-slate-500">for 14 days</span>
+          </div>
+          <div class="mt-6">
+            <a href="#apply" class="inline-flex justify-center items-center rounded-2xl bg-brand-600 text-white px-8 py-3 font-semibold shadow-soft hover:bg-brand-700">Join the pilot</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application form -->
+  <section id="apply" class="max-w-7xl mx-auto px-4 pb-24">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Apply for the pilot</h2>
+        <p class="mt-2 text-slate-600">Tell us where to reach you. We’ll set up one listing and have you live within 24 hours.</p>
+        <div class="mt-6 p-4 rounded-xl bg-slate-50 border border-slate-200 text-sm text-slate-600">
+          <p class="font-semibold text-slate-800">What you get in the pilot</p>
+          <ul class="list-disc ml-5 mt-2 space-y-1">
+            <li>SMS/WhatsApp replies for one listing</li>
+            <li>1 follow‑up if buyers go quiet</li>
+            <li>Daily hot‑lead digest</li>
+          </ul>
+        </div>
+      </div>
+      <form id="pilotForm" class="space-y-4 rounded-2xl border border-slate-200 p-6 bg-white shadow-soft">
+        <!-- Replace the action URL with your form handler (e.g., Formspree, Airtable, Beehiiv, etc.) -->
+        <input type="hidden" name="product" value="RE Copilot Pilot" />
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-700">Full name</label>
+            <input required name="name" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="Jane Agent" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700">Email</label>
+            <input required type="email" name="email" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="jane@brokerage.com" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700">Phone</label>
+            <input required name="phone" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="(555) 555‑5555" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700">City</label>
+            <input required name="city" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="Montréal / Toronto" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700">Brokerage</label>
+            <input name="brokerage" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="e.g., Royal LePage" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-700">Listings per week</label>
+            <select name="listings_week" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500">
+              <option value="0-3">0–3</option>
+              <option value="4-7">4–7</option>
+              <option value="8+">8+</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-slate-700">Preferred channel</label>
+          <div class="mt-2 flex flex-wrap gap-4 text-sm">
+            <label class="inline-flex items-center gap-2"><input type="radio" name="channel" value="SMS" required class="text-brand-600"> SMS</label>
+            <label class="inline-flex items-center gap-2"><input type="radio" name="channel" value="WhatsApp" class="text-brand-600"> WhatsApp</label>
+            <label class="inline-flex items-center gap-2"><input type="radio" name="channel" value="Email" class="text-brand-600"> Email</label>
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-slate-700">One listing URL</label>
+          <input name="listing_url" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="https://www.realtor.ca/..." />
+        </div>
+        <div class="flex items-start gap-3">
+          <input required id="consent" type="checkbox" class="mt-1 text-brand-600" />
+          <label for="consent" class="text-sm text-slate-600">I agree to receive pilot-related messages. Reply STOP to opt out.</label>
+        </div>
+        <button class="w-full md:w-auto inline-flex justify-center items-center rounded-xl bg-brand-600 text-white px-6 py-3 font-semibold shadow-soft hover:bg-brand-700">Request my pilot</button>
+        <p id="formNote" class="text-sm text-slate-500">We’ll contact you within 24 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="max-w-7xl mx-auto px-4 pb-24">
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">FAQ</h2>
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-soft">
+        <h3 class="font-semibold">Do I need to change my CRM?</h3>
+        <p class="mt-2 text-slate-600">No. RE Copilot works over SMS/WhatsApp and email. CRM integrations can come later if you need them.</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-soft">
+        <h3 class="font-semibold">Is this compliant with messaging rules?</h3>
+        <p class="mt-2 text-slate-600">Yes. Messages are transactional, include opt‑out, and we store minimal contact info.</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-soft">
+        <h3 class="font-semibold">How fast can I go live?</h3>
+        <p class="mt-2 text-slate-600">Most pilots are live within 24 hours once you share your listing URL and availability link.</p>
+      </div>
+      <div class="p-6 rounded-2xl border border-slate-200 bg-white shadow-soft">
+        <h3 class="font-semibold">What about French?</h3>
+        <p class="mt-2 text-slate-600">Out of the box support for English and French replies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+      <p>© <span id="year"></span> RE Copilot. Built in Montréal.</p>
+      <div class="flex items-center gap-6">
+        <a href="#apply" class="hover:text-slate-800">Join pilot</a>
+        <a href="#" class="hover:text-slate-800">Privacy</a>
+        <a href="#" class="hover:text-slate-800">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Replace with your form endpoint to collect submissions (e.g., Formspree/Airtable)
+    const FORM_ENDPOINT = ""; // e.g., "https://formspree.io/f/xxxxxx"
+
+    const f = document.getElementById('pilotForm');
+    const note = document.getElementById('formNote');
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(f).entries());
+      // Simple front-end validation
+      if(!data.name || !data.email || !data.phone || !data.city){
+        note.textContent = 'Please complete all required fields.';
+        note.className = 'text-sm text-red-600';
+        return;
+      }
+      note.textContent = 'Submitting…';
+      note.className = 'text-sm text-slate-500';
+
+      try {
+        if (FORM_ENDPOINT) {
+          const res = await fetch(FORM_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+          });
+          if (!res.ok) throw new Error('Network error');
+        }
+        f.reset();
+        note.textContent = 'Thanks! We\'ll reach out within 24 hours to set up your pilot.';
+        note.className = 'text-sm text-green-600';
+      } catch (err) {
+        note.textContent = 'Could not submit. Please email us at founder@recopilot.app';
+        note.className = 'text-sm text-red-600';
+      }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
