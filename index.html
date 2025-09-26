@@ -188,8 +188,11 @@
           </ul>
         </div>
       </div>
-      <form id="pilotForm" class="space-y-4 rounded-2xl border border-slate-200 p-6 bg-white shadow-soft">
-        <!-- Replace the action URL with your form handler (e.g., Formspree, Airtable, Beehiiv, etc.) -->
+      <form name="Pilot" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks" class="space-y-4 rounded-2xl border border-slate-200 p-6 bg-white shadow-soft">
+        <!-- Netlify Forms capture: ensure this name matches the hidden input below -->
+        <input type="hidden" name="form-name" value="Pilot" />
+        <!-- Honeypot field to reduce spam -->
+        <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
         <input type="hidden" name="product" value="RE Copilot Pilot" />
         <div class="grid md:grid-cols-2 gap-4">
           <div>
@@ -234,11 +237,11 @@
           <input name="listing_url" class="mt-1 w-full rounded-xl border-slate-300 focus:border-brand-500 focus:ring-brand-500" placeholder="https://www.realtor.ca/..." />
         </div>
         <div class="flex items-start gap-3">
-          <input required id="consent" type="checkbox" class="mt-1 text-brand-600" />
+          <input required id="consent" name="consent" type="checkbox" class="mt-1 text-brand-600" />
           <label for="consent" class="text-sm text-slate-600">I agree to receive pilot-related messages. Reply STOP to opt out.</label>
         </div>
         <button class="w-full md:w-auto inline-flex justify-center items-center rounded-xl bg-brand-600 text-white px-6 py-3 font-semibold shadow-soft hover:bg-brand-700">Request my pilot</button>
-        <p id="formNote" class="text-sm text-slate-500">We’ll contact you within 24 hours.</p>
+        <p class="text-sm text-slate-500">We’ll contact you within 24 hours.</p>
       </form>
     </div>
   </section>
@@ -272,11 +275,16 @@
       <p>© <span id="year"></span> RE Copilot. Built in Montréal.</p>
       <div class="flex items-center gap-6">
         <a href="#apply" class="hover:text-slate-800">Join pilot</a>
-        <a href="#" class="hover:text-slate-800">Privacy</a>
-        <a href="#" class="hover:text-slate-800">Terms</a>
+        <a href="/privacy" class="hover:text-slate-800">Privacy</a>
+        <a href="/terms" class="hover:text-slate-800">Terms</a>
+        <a href="mailto:founder@recopilot.app" class="hover:text-slate-800">founder@recopilot.app</a>
       </div>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
   <script>
     // Replace with your form endpoint to collect submissions (e.g., Formspree/Airtable)
