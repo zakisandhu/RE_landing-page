@@ -10,8 +10,10 @@
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0ea5e9" />
   
+  <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
   <!-- TailwindCSS via CDN for quick iteration -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" defer></script>
   <script>
     tailwind.config = {
       theme: {
@@ -66,8 +68,8 @@
           <li class="flex items-start gap-3"><svg class="h-5 w-5 text-brand-600 mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3 3a1 1 0 011-1h2a1 1 0 011 1v1h6V3a1 1 0 011-1h2a1 1 0 011 1v14a1 1 0 01-1 1h-2a1 1 0 01-1-1v-1H7v1a1 1 0 01-1 1H4a1 1 0 01-1-1V3zm4 11h6V6H7v8z"/></svg>No CRM required — works over SMS/WhatsApp + email</li>
         </ul>
         <div class="mt-8 flex flex-col sm:flex-row gap-3">
-          <a href="#apply" class="inline-flex justify-center items-center rounded-xl bg-brand-600 text-white px-6 py-3 font-semibold shadow-soft hover:bg-brand-700">Join the 14‑day pilot</a>
-          <a href="#how" class="inline-flex justify-center items-center rounded-xl border border-slate-300 px-6 py-3 font-semibold text-slate-700 hover:bg-slate-50">See how it works</a>
+          <a href="#apply" class="inline-flex justify-center items-center rounded-xl bg-brand-600 text-white px-6 py-3 font-semibold shadow-soft hover:bg-brand-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500">Join the 14‑day pilot</a>
+          <button type="button" onclick="Calendly.initPopupWidget({ url: 'https://calendly.com/<your-handle>/12-min-preview' }); return false;" class="inline-flex justify-center items-center rounded-xl border border-slate-300 px-6 py-3 font-semibold text-slate-700 hover:bg-slate-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 focus-visible:bg-slate-50">Book 12-min preview</button>
         </div>
         <p class="mt-4 text-sm text-slate-500">Built in Montréal · English / Français</p>
       </div>
